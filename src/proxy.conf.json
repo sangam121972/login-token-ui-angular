@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://fbvztufrjg.execute-api.eu-west-1.amazonaws.com/autotoken-api-d",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  }
+}

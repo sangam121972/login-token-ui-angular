@@ -10,7 +10,8 @@ export class BasicAuthInterceptor implements HttpInterceptor {
         if (currentUser && currentUser.authdata) {
             request = request.clone({
                 setHeaders: { 
-                    Authorization: `Basic ${currentUser.authdata}`
+                    'Authorization': `Basic ${currentUser.authdata}`,
+                    'Access-Control-Allow-Origin': '*'
                 }
             });
         }

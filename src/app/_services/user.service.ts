@@ -10,6 +10,6 @@ export class UserService {
     constructor(private http: HttpClient) { }
 
     getAll() {
-        return this.http.get<User[]>(`${environment.apiBaseUrl}v1//users`);
+        return this.http.get<User[]>(`/api/v1//users`);
     }
 }

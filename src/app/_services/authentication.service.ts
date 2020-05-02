@@ -10,7 +10,7 @@ export class AuthenticationService {
 
     login(username: string, password: string, token:string) {
         console.log ("token:" + token)
-        return this.http.post<any>(`${environment.apiBaseUrl}v1/users/authenticate`, { username, password, token })
+        return this.http.post<any>(`/api/v1/users/authenticate`, { username, password, token })
             .pipe(map(user => {
                 // login successful if there's a user in the response
                 if (user) {
@@ -30,7 +30,7 @@ export class AuthenticationService {
     }
 
     async encodeToken(uuid:string): Promise <any> {
-        const response = await this.http.post (`${environment.apiBaseUrl}v1/tokens/encode`, { uuid}).toPromise();
+        const response = await this.http.post (`/api/v1/tokens/encode`, { uuid}).toPromise();
         return response;
     }
 }
