@@ -16,7 +16,7 @@
     "zone.js": "0.10.3",
     "jasmine-core": "3.5.0",
     "angular2-uuid": "^1.1.1",
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.0.0",
     "core-js": "^3.6.5",
     "jsonwebtoken": "^8.5.1",
     "@angular/core": "9.0.7",
